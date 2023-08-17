@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 /** @type {import('next').NextConfig} */
 const path = require("path");
 const nextConfig = {
@@ -10,12 +11,8 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: "/danh-muc/tin-tuc-trong-ngay",
-        destination: "/Pages/Categories/Daily",
-      },
-      {
-        source: "/danh-muc/tin-thi-truong",
-        destination: "/Pages/Categories/MarketNews",
+        source: "/danh-sach",
+        destination: "/Pages/BookMarks/",
       },
     ];
   },
